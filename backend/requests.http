@@ -1,0 +1,38 @@
+###
+GET http://localhost:3000/api/foods HTTP/1.1
+###
+
+
+
+
+GET http://localhost:3000/api/foods/634cb00867aa8e75d7647188  HTTP/1.1
+
+
+###
+POST http://localhost:3000/api/foods HTTP/1.1
+content-type: application/json
+
+{
+   "nombre": "Hamburguesa SyCas",
+   "precio": 1600,
+   "ingredientes": "carne 180 gr, jamon y queso, roquefort, panceta, champiñones y huevo frito"
+}
+
+
+
+###
+PUT http://localhost:3000/api/foods/634b3207d4c12d762cc651ec HTTP/1.1
+content-type: application/json
+
+{
+  "nombre": "Hamburguesa SyCas",
+    "precio": 1600,
+    "ingredientes": "carne 180 gr, jamon y queso, roquefort, panceta, champiñones y huevo frito"
+}
+
+###
+
+
+DELETE http://localhost:3000/api/foods/634b31d3d4c12d762cc651e8 HTTP/1.1
+###
+
